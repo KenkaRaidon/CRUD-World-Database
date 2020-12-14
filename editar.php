@@ -9,9 +9,9 @@ if (isset($_POST)) {
     if ($conexion) {
         $sql = "UPDATE city SET name='$ciudad', CountryCode='$p', District='$d', Population=$pob WHERE id=$codigo";
         if (mysqli_query($conexion, $sql)) {
-            echo "Se guardo correctamente la ciudad " . $ciudad." ".$p;
+            echo "Se guardo correctamente la ciudad " . $ciudad . " " . $p;
         } else {
-            echo "No se guardo ".$codigo." ".$ciudad." ".$p." ".$d." ".$pob;
+            echo "No se guardo.";
         }
     }
 }

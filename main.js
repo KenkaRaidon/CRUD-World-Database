@@ -1,5 +1,5 @@
 var codigo, estado, poblacion, ciudad;
-var ciud, p, est, pob;
+
 $(document).ready(function () {
 
     var fila, opcion;
@@ -15,9 +15,10 @@ $(document).ready(function () {
     $("#buttonGuardar").click(function (e) {
         var valid = this.form.checkValidity();
         if (valid) {
-            e.preventDefault();var ciudad = $('#ciudad').val();
+            e.preventDefault();
+            var ciudad = $('#ciudad').val();
             var codigo = $('#pais').val();
-            var distrito = $('#distrito').val();
+            var estado = $('#distrito').val();
             var poblacion = $('#poblacion').val();
             switch (opcion) {
                 case 1:
@@ -101,8 +102,6 @@ $(document).ready(function () {
         $('#modalCRUD').modal('show');
 
     });
-
-
 
 });
 
